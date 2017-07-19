@@ -1,0 +1,441 @@
+*,p,ul,a {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 100%;
+}
+body {
+    font-size: 1em;
+    line-height: 1.625em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
+    color: #767676;
+    font-weight: 400;
+}
+h1{
+    font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+    color: #343434;
+    font-weight: 600;
+    font-variant-ligatures: common-ligatures;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+p,ul,ol{
+    margin-bottom: 1.625em;
+}
+ul,ol {
+    list-style: none;
+}
+ul.bullets {
+    list-style: inside;
+}
+ol {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+strong {
+    font-weight: 600;
+}
+hr {
+    margin: 1.625em 0;
+    border-color: #f4f4f4;
+}
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+}
+.type--uppercase {
+    text-transform: uppercase;
+}
+.type--bold {
+    font-weight: bold;
+}
+.type--italic {
+    font-weight: italic;
+}
+.type--fine-print {
+    font-size: 0.6875em;
+}
+.type--strikethrough {
+    text-decoration: line-through;
+    opacity: .5;
+}
+.type--underline {
+    text-decoration: underline;
+}
+.type--body-font {
+    font-family: 'Lora', 'Helvetica';
+}
+body {
+    overflow-x: hidden;
+}
+.pos-top {
+    top: 0;
+}
+.pos-vertical-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.height-100{
+    height: auto;
+    padding: 5em 0;
+}
+@media all and (min-height: 600px) and (min-width: 767px) {
+    .height-100 {
+        height: 100vh;
+    }
+}
+/**Images **/
+img {
+    max-width: 100%;
+    margin-bottom: 1.625em;
+}
+p + img,
+img:last-child {
+    margin-bottom: 0;
+}
+.background-image-holder {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-position: 50% 50% !important;
+    z-index: 0;
+    transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    opacity: 0;
+    background: #232323;
+    background-size: cover !important;
+}
+/**Colors **/
+body {
+    background: #f8f8f8;
+}
+.color--primary {
+    color: #425cbb !important;
+}
+a {
+    color: #425cbb;
+}
+/**Buttons **/
+.btn {
+    font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+    transition: 0.1s linear;
+    -webkit-transition: 0.1s linear;
+    -moz-transition: 0.1s linear;
+    border-radius: 100px;
+    padding-top: 0.54166667em;
+    padding-bottom: 0.65em;
+    padding-right: 3.25em;
+    padding-left: 3.25em;
+    border: 1px solid #232323;
+    border-width: 2px;
+    font-size: inherit;
+    line-height: 1.625em;
+    text-transform: uppercase;
+}
+.btn:active {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.btn:first-child {
+    margin-left: 0;
+}
+.btn:last-child {
+    margin-right: 0;
+}
+.btn--primary:hover {
+    background: #546cc3;
+}
+/**Form Elements **/
+form {
+    max-width: 100%;
+    overflow: hidden;
+}
+form + form {
+    margin-top: 30px;
+}
+label {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 400;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select,
+input[type="tel"],
+input[type="url"],
+input[type="search"] {
+    padding: 0.8125em;
+    border-radius: 50px;
+    border: none;
+}
+input[type="text"]:not(button),
+input[type="email"]:not(button),
+input[type="password"]:not(button),
+textarea:not(button),
+select:not(button),
+input[type="tel"]:not(button),
+input[type="url"]:not(button),
+input[type="search"]:not(button) {
+    background: #ffffff;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus {
+    outline: none;
+}
+input[type="submit"] {
+    background: none;
+    outline: none;
+    border: none;
+    background: #425cbb;
+    padding: 0.8125em 3.25em 0.8125em 3.25em;
+    color: #fff;
+}
+.input-checkbox{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: inline-block;
+    cursor: pointer;
+}
+.input-checkbox .inner {
+    display: inline-block;
+}
+.input-checkbox input {
+    display: none;
+}
+.input-checkbox.checked .inner {
+    background: #425cbb;
+}
+.input-checkbox label{
+    display: block;
+}
+.input-checkbox {
+    padding: 0;
+}
+.input-checkbox .inner {
+    width: 1.625em;
+    height: 1.625em;
+    border-radius: 50%;
+    background: #000;
+}
+
+.btn {
+    border-color: rgba(35, 35, 35, 0.1);
+}
+.btn .btn__text {
+    letter-spacing: 1px;
+}
+.btn:hover {
+    border-color: rgba(35, 35, 35, 0.9);
+}
+/*! -- Forms -- */
+form div[class*='col-'] > input {
+    width: 100%;
+}
+form div[class*='col-'] > button[type="submit"] {
+    width: 100%;
+}
+form .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+input[type='text'],
+input[type='address'],
+input[type='url'],
+input[type='password'],
+input[type='email'],
+input[type="search"],
+input[type="tel"] {
+    transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    color: #767676;
+    padding-left: 1.625em;
+    padding-right: 1.625em;
+    height: 52px;
+}
+.input-with-icon {
+    position: relative;
+}
+.input-with-icon i {
+    position: absolute;
+    font-size: 1.4375em;
+    margin-left: 1.1304347826087em;
+    top: 13px;
+    left: 0;
+}
+.input-with-icon label + i {
+    top: 52px;
+}
+.input-with-icon input {
+    padding-left: 4.0625em;
+    width: 100%;
+}
+label {
+    font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+    color: #343434;
+    font-weight: 600;
+    font-variant-ligatures: common-ligatures;
+    margin-bottom: 0;
+    font-size: 0.625em;
+    line-height: 2.6em;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 2.36363636363636em;
+    display: block;
+    margin: 0;
+    margin-left: 2.6em;
+}
+label + input {
+    margin-top: 0.8125em;
+}
+button {
+    height: 52px;
+    font-size: 0.625em !important;
+    letter-spacing: 1px;
+    color: #fff;
+    background: #425cbb;
+    border-color: #425cbb;
+}
+button:hover,
+button:focus,
+button:active {
+    color: #fff !important;
+}
+button:active,
+button:hover,
+button:focus {
+    border-color: #425cbb !important;
+}
+button.btn--loading:after {
+    background: #8c9cd7;
+}
+button.btn--loading:after {
+    background: #fff;
+    border-radius: 100px;
+}
+.input-checkbox label {
+    margin-left: 0;
+}
+.input-checkbox .inner {
+    background: #ececec;
+    transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+}
+.input-checkbox .inner:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.input-checkbox .inner:before {
+    opacity: 0;
+    transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+}
+.input-checkbox.checked .inner {
+    text-align: center;
+    position: relative;
+    background: #64b671;
+}
+.input-checkbox.checked .inner:before {
+    content: '\2713';
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    left: 0;
+    opacity: 1;
+    font-size: 13px;
+}
+.input-checkbox + br + .input-checkbox {
+    margin-left: 1.625em;
+}
+li .input-checkbox {
+    line-height: 1.625em !important;
+}
+li + li .input-checkbox {
+    margin-left: 1.625em;
+}
+.cover .social-list li:not(:last-child) {
+    margin-right: 3.25em;
+}
+.cover .social-list li a {
+    font-size: 1.4375em;
+}
+.cover .pos-bottom .social-list {
+    margin-bottom: 3.25em;
+}
+.cover-8 {
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+.cover-8 > div[class*='col-'] {
+    position: absolute;
+    height: 100%;
+}
+.cover-8 > div[class*='col-']:first-child {
+    left: 0;
+}
+.cover-8 > div[class*='col-']:last-child {
+    right: 0;
+}
+
+.cover-8 .logo {
+    max-height: 3.25em;
+}
+.cover-8 .pos-vertical-center {
+    overflow: hidden;
+}
+.cover-8 p.lead + div {
+    margin-top: 3.25em;
+}
+.cover-8 form {
+    max-width: 60%;
+    margin: 0 auto;
+}
+.cover-8 form .row {
+    margin-bottom: 1.625em;
+}
+.cover-8 form .input-checkbox {
+    margin-right: 0.8125em;
+}
+.cover-8 form .input-checkbox + span {
+    position: relative;
+    bottom: 8px;
+}
+@media all and (max-width: 1300px) {
+    .cover-8 form {
+        max-width: 80%;
+    }
+}
