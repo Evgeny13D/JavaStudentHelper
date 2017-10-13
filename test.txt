@@ -1,0 +1,4 @@
+https://www.ibm.com/support/knowledgecenter/SSLTBW_1.13.0/com.ibm.zos.r13.asma400/assinst.htm#assinst
+https://en.wikibooks.org/wiki/360_Assembly/360_Instructions/USING
+http://www.firststeps.ru/asm/r.php?35
+http://lib.ru/CTOTOR/IBMPC/abel.txt_with-big-pictures.html#5
